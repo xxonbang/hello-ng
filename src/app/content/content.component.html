@@ -1,0 +1,18 @@
+<h2>test</h2>
+
+<table>
+  <thead>
+  <tr>
+  <td>할일 아이디</td>
+  <td>할일 내용</td>
+  <td>완료 여부</td>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let todo of todos">
+    <td>{{todo.id}}</td>
+    <td *ngIf="todo.completed" style="text-decoration: line-through">{{todo.title}}</td>
+    <td>{{todo.completed}}</td>
+  </tr>
+  </tbody>
+</table>
